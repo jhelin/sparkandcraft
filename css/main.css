@@ -94,10 +94,53 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    border: 1px solid purple;
+}
+
+header { 
+    position:relative;
+    border: 1px solid red;
+}
+
+nav {
+    float: right;
+    padding: 1.3em;
+    background-color: #fff;
+    border:1px solid black;
+}
+
+nav a{
+    text-decoration: none;
+    color: #b2b2b7;
+    padding: 0em 1em 0em 0em;
+    font-size: 1.5em
+}
+
+header a:hover {
+    color: black;
+}
 
 
+.about p {
+    clear: both;
+    font-size:2.5em;
+    padding: 3em 4em 1em 2.5em;
+    
+}
 
 
+header a:hover {
+    color: black;
+}
 
 
 
