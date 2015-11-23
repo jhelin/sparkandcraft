@@ -107,15 +107,17 @@ body {
 }
 
 header { 
-    position:relative;
-    border: 1px solid red;
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
 }
 
 nav {
-    float: right;
     padding: 1.3em;
     background-color: #fff;
-    border:1px solid black;
+    float: right;
 }
 
 nav a{
