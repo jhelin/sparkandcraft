@@ -104,10 +104,13 @@ html {
 
 body {
     border: 1px solid purple;
+    font-family: 'roboto', sans-serif;
 }
 
 img {
     max-width:100%;
+}
+
 }
 
 header { 
@@ -122,6 +125,7 @@ nav {
     padding: 1.3em;
     background-color: #fff;
     float: right;
+    font-family: 
 }
 
 nav a{
@@ -153,7 +157,9 @@ section.works {
     max-width:1500px;
     min-width: 250px;
     padding: 0 30px;
+   
 }
+
 
 .container {
     position: relative; 
@@ -161,10 +167,10 @@ section.works {
 }
 
 .col {
-    float: left;
     position: relative;
     background-color:hsla(0, 0%, 0%, 0.0);
     padding: .5em;
+    display: block;
 }
 
 .col:hover {
@@ -175,100 +181,107 @@ section.works {
 
 .col img {
     position: relative;
-    z-index: -10; 
+ 
 }
 
 .col h2 {
     position: absolute;
     text-align: center;
     margin: 0;
-    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate (-50%, -50%);
+    text-align: center;
     font-size: 16px;
     color: #000;
     font-size: 1em;
-    display: none;
-    
-}
-
-.col article:hover {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    color: #000;
-    font-size: 1em;
-    display: block;
+    font-weight: lighter;
+    z-index: 10;
 }
 
 
-div.firstworks57 {
+
+div.largeworks57 {
     float: left;
     width:57%;
     height: 100%;
 
 }
 
-div.firstworks43 {
-    float: left;
+div.largeworks43 {
+   float: left;
     width: 43%;
     padding: 0px 0px 2px 0px;
     height: 100%;
     
 }
 
-div.secondworks39 {
+div.medworks39 {
     float: left;
     width:39.5%;
     height: 100%;
 }
 
-div.secondworks22 {
+div.medworks22 {
     float: left;
     width:22.2%;
-    padding: 0px 0px 2px 0px;
-    height: 100%;
+    border: 1px solid black;
+
 }
 
-div.secondworks38 {
+div.medworks38 {
     float: left;
     width:38.3%;
     height: 100%;
     
 }
 
-article.rotate {
-    float: right;
-    margin: 1em 1.4em 0em 0em;
+.rotatingworks {
+    float: left;
+    width: 38.5;
     height: 100%;
 }
 
-article.thirdworks42 {
+div.smallworks42 {
     float: left;
     width:42.3%;
 }
 
-article.thridworks19 {
+div.smallworks19 {
     float:left;
     width: 19.2%;
-    
 }
 
 footer {
-    background: #323232;
+    background: #1e1e1f;
     color: beige;
     clear: both;
+    overflow: auto;
+    padding: 2em;
 }
 
-.mailto {
-    float: left;
-    
+footer a {
+    text-decoration: none;
+    font-weight: lighter;
 }
-.socialmedia {
-   float: left; 
+
+footer h3 {
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 0em 10em 0em 0em;
 }
-copyright {
+.connect {
     float: left;
+}
+.connect a {
+    color: beige;
+}
+.connect a:hover {
+    color:#aaa9ad;
+}
+.copyright {
+    float: left;
+    color: #aaa9ad;
 }
 
 
