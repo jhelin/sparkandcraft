@@ -99,11 +99,15 @@ html {
     
 }
 *, *:before, *:after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
     border: 1px solid purple;
+}
+
+img {
+    max-width:100%;
 }
 
 header { 
@@ -131,28 +135,141 @@ header a:hover {
     color: black;
 }
 
-
-.about p {
-    clear: both;
-    font-size:2.5em;
-    padding: 3em 4em 1em 2.5em;
+.logo {
+    margin: 4.2em 3em 3em 3em;
+    position: fixed;
     
 }
 
+.about p {
+    clear: both;
+    font-size:1.8em;
+    padding: 3em 10em 1em 8em;
+    font-weight: lighter;
+    
+}
 
-header a:hover {
-    color: black;
+section.works {
+    max-width:1500px;
+    min-width: 250px;
+    padding: 0 30px;
+}
+
+.container {
+    position: relative; 
+    padding: 0px 15px;
+}
+
+.col {
+    float: left;
+    position: relative;
+    background-color:hsla(0, 0%, 0%, 0.0);
+    padding: .5em;
+}
+
+.col:hover {
+    background-color:hsla(0,100%,100%,0.75);
+    display: block;
+}    
+
+
+.col img {
+    position: relative;
+    z-index: -10; 
+}
+
+.col h2 {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    width: 60%;
+    font-size: 16px;
+    color: #000;
+    font-size: 1em;
+    display: none;
+    
+}
+
+.col article:hover {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #000;
+    font-size: 1em;
+    display: block;
 }
 
 
+div.firstworks57 {
+    float: left;
+    width:57%;
+    height: 100%;
 
+}
 
+div.firstworks43 {
+    float: left;
+    width: 43%;
+    padding: 0px 0px 2px 0px;
+    height: 100%;
+    
+}
 
+div.secondworks39 {
+    float: left;
+    width:39.5%;
+    height: 100%;
+}
 
+div.secondworks22 {
+    float: left;
+    width:22.2%;
+    padding: 0px 0px 2px 0px;
+    height: 100%;
+}
 
+div.secondworks38 {
+    float: left;
+    width:38.3%;
+    height: 100%;
+    
+}
 
+article.rotate {
+    float: right;
+    margin: 1em 1.4em 0em 0em;
+    height: 100%;
+}
 
+article.thirdworks42 {
+    float: left;
+    width:42.3%;
+}
 
+article.thridworks19 {
+    float:left;
+    width: 19.2%;
+    
+}
+
+footer {
+    background: #323232;
+    color: beige;
+    clear: both;
+}
+
+.mailto {
+    float: left;
+    
+}
+.socialmedia {
+   float: left; 
+}
+copyright {
+    float: left;
+}
 
 
 
