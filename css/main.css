@@ -111,13 +111,14 @@ img {
     max-width:100%;
 }
 
+}
+
 header { 
     background-color: #fff;
     position: fixed;
     top:0;
     left:0;
     width:100%;
-    z-index: 1000;
 }
 
 nav {
@@ -131,7 +132,7 @@ nav a{
     text-decoration: none;
     color: #b2b2b7;
     padding: 0em 1em 0em 0em;
-    font-size: 1.5em;
+    font-size: 1.5em
 }
 
 header a:hover {
@@ -165,6 +166,7 @@ section.works {
     padding: 0px 15px;
 }
 
+<<<<<<< HEAD
 .grid {
     display: block;
     font-size: 0;
@@ -259,6 +261,34 @@ section.works {
 }
 .item-no-hover:hover .item-image {
     opacity: 1;
+=======
+.col {
+    position: relative;
+    background-color:hsla(0, 0%, 0%, 0.0);
+    padding: .5em;
+    display: block;
+}
+
+
+
+.col img {
+    position: relative;
+ 
+}
+
+.col h2 {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate (-50%, -50%);
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-size: 1em;
+    font-weight: lighter;
+    z-index: 10;
 }
 
 footer {
@@ -461,106 +491,4 @@ footer h3 {
     h3 {
         page-break-after: avoid;
     }
-}
-
-
-
-.grid {
-    display: block;
-    font-size: 0;
-    margin-left: -20px;
-}
-
-.grid__item {
-    display: inline-block;
-    vertical-align: top;
-    height: 320px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    font-size: 16px;
-}
-
-.grid__item--57 {
-    width: 57%;
-}
-.grid__item--43 {
-    width: 43%;
-}
-
-.grid__item--39 {
-    width: 39%;
-}
-.grid__item--22 {
-    width: 22%;
-}
-
-.grid__item--38 {
-    width: 38%;
-}
-
-.grid__item--42 {
-    width: 42%;
-}
-
-.grid__item--19 {
-    width: 19%;
-}
-.grid__item--61  {
-    width: 61%;
-}
-.grid__item--66 {
-    width: 66%;
-}
-.grid__item--34 {
-    width: 34%;
-}
-.grid__item--small {
-    height: 160px;
-}
-
-.item {
-    display: block;
-    position: relative;
-    height: 100%;
-}
-.item__hover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.item__hover h2 {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-    font-size: 1em;
-    font-weight: lighter;
-    margin: 0;
-}
-.item__image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    -webkit-transition: opacity 0.1s ease-in 0s;
-    transition: opacity 0.1s ease-in 0s;
-}
-.item:hover .item__hover {
-    display: block;
-}
-.item:hover .item__image {
-    opacity: 0.5;
-}
-.item--no-hover:hover .item__image {
-    opacity: 1;
 }
